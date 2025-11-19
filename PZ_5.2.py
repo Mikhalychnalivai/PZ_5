@@ -9,8 +9,8 @@ def add_left_digit(D, K):
 
     return int(str(D) + str(K))
 
-D1 = int(input("Введите цифру D1 (0-9): "))
-D2 = int(input("Введите цифру D2 (0-9): "))
+D1 = int(input("Введите цифру D1: "))
+D2 = int(input("Введите цифру D2: "))
 K = int(input("Введите начальное число K: "))
 
 K = add_left_digit(D1, K)

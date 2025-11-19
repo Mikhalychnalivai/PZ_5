@@ -1,0 +1,13 @@
+# Составить функцию решения задачи: из заданного числа вычли сумму его цифр.
+# Из результата вновь вычли сумму его цифр и т. д. Через сколько таких действий получится нуль?
+
+def count_steps_to_zero(n):
+    steps = 0
+    current = n
+    
+    while current > 0:
+        digit_sum = sum(int(digit) for digit in str(current))
+        current -= digit_sum
+        steps += 1
+        
+    return steps
